@@ -15,13 +15,27 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Hero />
-        <VisionMission />
-        <WhyUs />
-        <CallToAction />
-        <AtAGlance />
-        <Members />
-        <Testimonials />
+        <div id="hero">
+          <Hero />
+        </div>
+        <div id="vision-mission">
+          <VisionMission />
+        </div>
+        <div id="why-us">
+          <WhyUs />
+        </div>
+        <div id="call-to-action">
+          <CallToAction />
+        </div>
+        <div id="at-a-glance">
+          <AtAGlance />
+        </div>
+        <div id="members">
+          <Members />
+        </div>
+        <div id="testimonials">
+          <Testimonials />
+        </div>
       </main>
       <Footer />
     </div>

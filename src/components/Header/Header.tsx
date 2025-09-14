@@ -30,24 +30,23 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <a className="nav-link" href="#hero">Home</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About Us
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a className="dropdown-item" href="#">About Blue Dream</a></li>
-                  <li><a className="dropdown-item" href="#">Key Management</a></li>
-                </ul>
+              <li className="nav-item">
+                <a className="nav-link" href="#vision-mission">About</a>
               </li>
-              <li className="nav-item"><a className="nav-link" href="#">Concerns</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Factory</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Products</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Free Services</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Media News</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Gallery</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+              <li className="nav-item">
+                <a className="nav-link" href="#why-us">Why Us</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#at-a-glance">At a Glance</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#members">Members</a>
+              </li>
             </ul>
           </div>
         </div>

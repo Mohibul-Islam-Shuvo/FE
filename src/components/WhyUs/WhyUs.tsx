@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from "react-awesome-reveal";
 
 const WhyUs = () => {
   const reasons = [
@@ -16,20 +17,22 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="why-us-section py-5 bg-light">
-      <div className="container">
-        <h2 className="text-center mb-4">Why is Blue Dream the No. 1 Clothing Company in Bangladesh?</h2>
-        <div className="row">
-          <div className="col-md-8 offset-md-2">
-            <ol>
-              {reasons.map((reason, index) => (
-                <li key={index} className="mb-2">{reason}</li>
-              ))}
-            </ol>
+    <Fade>
+      <section className="why-us-section py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center mb-4">Why is Blue Dream the No. 1 Clothing Company in Bangladesh?</h2>
+          <div className="row">
+            <div className="col-md-8 offset-md-2">
+              <ol>
+                {reasons.map((reason, index) => (
+                  <li key={index} className="mb-2">{reason}</li>
+                ))}
+              </ol>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Fade>
   );
 };
 

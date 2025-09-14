@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from "react-awesome-reveal";
 
 const Testimonials = () => {
   const testimonials = [
@@ -15,28 +16,30 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="testimonials-section py-5">
-      <div className="container">
-        <h2 className="text-center mb-4">Testimonials</h2>
-        <div className="row">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="col-md-6 mb-4">
-              <div className="card">
-                <div className="card-body">
-                  <div className="d-flex">
-                    <img src={testimonial.image} alt={testimonial.name} className="rounded-circle me-3" style={{width: '100px', height: '100px'}} />
-                    <div>
-                      <p className="card-text">{testimonial.text}</p>
-                      <footer className="blockquote-footer">{testimonial.name}</footer>
+    <Fade>
+      <section className="testimonials-section py-5">
+        <div className="container">
+          <h2 className="text-center mb-4">Testimonials</h2>
+          <div className="row">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="col-md-6 mb-4">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="d-flex">
+                      <img src={testimonial.image} alt={testimonial.name} className="rounded-circle me-3" style={{width: '100px', height: '100px'}} />
+                      <div>
+                        <p className="card-text">{testimonial.text}</p>
+                        <footer className="blockquote-footer">{testimonial.name}</footer>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Fade>
   );
 };
 
